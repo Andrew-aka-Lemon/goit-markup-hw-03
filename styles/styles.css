@@ -35,21 +35,29 @@ body {
   width: 1px;
 }
 
+/* agent Styles reset */
 body,
 h1,
 h2,
 h3,
 ul,
+ol,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
+/* універсальний контейнер для всіх блоків */
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ========================HEADER====================== */
 .header {
@@ -94,6 +102,7 @@ p {
 .header > .container {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 2px solid #2f303a;
 }
 
 /* ========================FOOTER====================== */
@@ -150,9 +159,12 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  max-width: 696px;
+  margin: inherit;
 }
 
 .hero-btn {
+  font-weight: 700;
   color: var(--text-color-alt);
   background-color: var(--text-colot-accent);
   cursor: pointer;
@@ -169,14 +181,17 @@ p {
   background-color: var(--btn-color-focus);
 }
 
+.hero > .container {
+  /* висоту і інше потім треба видалити, зараз все це тут для наглядності і візуальних пропорцій*/
+  height: 600px;
+  padding-top: 202px;
+  padding-bottom: 198px;
+}
+
 /* ========================PREFERENCES====================== */
 /* .preferences {
   background-color: var(--bgc-color-main);
 } */
-.preferences > .container {
-  margin-top: 96px;
-  margin-bottom: 94px;
-}
 
 .preferences-header {
   color: var(--text-color-main);
@@ -203,8 +218,9 @@ p {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.whatdowedo > .container {
-  margin-bottom: 94px;
+
+.whatdowedo-item > img {
+  display: block;
 }
 /* ========================our-team====================== */
 .our-team {
@@ -237,10 +253,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 30px;
-}
-
-.our-team > .container {
-  padding: 94px 0;
 }
 
 /* ========================/// PORTFOLIO ///====================== */
