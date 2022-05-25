@@ -1,0 +1,227 @@
+:root {
+  --text-color-main: #212121;
+  --text-color-secondary: #757575;
+  --text-colot-accent: #2196f3;
+  --text-color-alt: #fff;
+  --logo-color: #000;
+  --bgc-color-main: #e5e5e5;
+  --bgc-color-secondary: #f5f4fa;
+  --btn-color-focus: #188ce8;
+  --text-color-footer: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-secondary);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Hiding class, making content visible only to screen readers but not visually */
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ========================HEADER====================== */
+.header {
+  background-color: var(--text-color-alt);
+}
+.logo {
+  color: var(--logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--text-colot-accent);
+}
+
+.header-link,
+.header-contacts {
+  color: var(--text-color-main);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-link:focus,
+.contacts-link:focus,
+.header-link:hover,
+.contacts-link:hover {
+  color: var(--text-colot-accent);
+  cursor: pointer;
+}
+
+.current-page {
+  color: var(--text-colot-accent);
+}
+.contacts-link {
+  color: var(--text-color-secondary);
+}
+
+/* ========================FOOTER====================== */
+
+.footer {
+  background-color: var(--text-color-footer);
+}
+
+.logo-alt {
+  color: var(--text-color-alt);
+}
+
+.address-street > .footer-link {
+  color: var(--text-color-alt);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--text-colot-accent);
+  cursor: pointer;
+}
+
+/* ========================/// STUDIO ///====================== */
+
+/* ========================MAIN====================== */
+
+/* ========================HERO====================== */
+
+.hero {
+  background-color: #2f303a;
+}
+/* змінну кольору не ставлю, так як явно у Героя буде інший контент */
+
+.hero-title {
+  color: var(--text-color-alt);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  color: var(--text-color-alt);
+  background-color: var(--text-colot-accent);
+  cursor: pointer;
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: var(--btn-color-focus);
+}
+
+/* ========================PREFERENCES====================== */
+/* .preferences {
+  background-color: var(--bgc-color-main);
+} */
+
+.preferences-header {
+  color: var(--text-color-main);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.preferences-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ========================На каких устройствах мы работаем====================== */
+
+.whatdowedo-header,
+.our-team-header {
+  color: var(--text-color-main);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ========================our-team====================== */
+.our-team {
+  background-color: var(--bgc-color-secondary);
+}
+
+.our-team-item {
+  background-color: var(--text-color-alt);
+}
+
+.our-team-name {
+  color: var(--text-color-main);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ========================/// PORTFOLIO ///====================== */
+
+.filter-btn {
+  color: var(--text-color-main);
+  background-color: var(--bgc-color-secondary);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--text-color-alt);
+  background-color: var(--text-colot-accent);
+}
+
+.gallery-card {
+  color: inherit;
+}
+
+.card-name {
+  color: var(--text-color-main);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-filter {
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
