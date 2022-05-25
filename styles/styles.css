@@ -52,17 +52,34 @@ p {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 /* ========================HEADER====================== */
 .header {
+  display: flex;
   background-color: var(--text-color-alt);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
   color: var(--logo-color);
   font-family: "Raleway", sans-serif;
@@ -70,6 +87,7 @@ p {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .logo-accent {
   color: var(--text-colot-accent);
@@ -82,6 +100,12 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
 .header-link:focus,
@@ -99,10 +123,15 @@ p {
   color: var(--text-color-secondary);
 }
 
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header > .container {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 2px solid #2f303a;
+  align-items: center;
 }
 
 /* ========================FOOTER====================== */
@@ -136,7 +165,8 @@ p {
 }
 
 .footer > .container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ========================/// STUDIO ///====================== */
@@ -148,6 +178,7 @@ p {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-bottom: 0px;
 }
 /* змінну кольору не ставлю, так як явно у Героя буде інший контент */
 
@@ -158,13 +189,18 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   max-width: 696px;
-  margin: inherit;
 }
 
 .hero-btn {
+  margin-right: auto;
+  margin-left: auto;
+
   font-weight: 700;
+
   color: var(--text-color-alt);
   background-color: var(--text-colot-accent);
   cursor: pointer;
@@ -189,9 +225,17 @@ p {
 }
 
 /* ========================PREFERENCES====================== */
-/* .preferences {
-  background-color: var(--bgc-color-main);
-} */
+.preferences {
+  padding-top: 96px;
+}
+
+.preferences-list {
+  display: flex;
+}
+
+.preferences-item:not(last-child) {
+  margin-right: 30px;
+}
 
 .preferences-header {
   color: var(--text-color-main);
@@ -219,18 +263,38 @@ p {
   margin-bottom: 50px;
 }
 
+.whatdowedo-list {
+  display: flex;
+}
+
+.whatdowedo-item:not(last-child) {
+  margin-right: 30px;
+}
+
 .whatdowedo-item > img {
   display: block;
 }
 /* ========================our-team====================== */
 .our-team {
   background-color: var(--bgc-color-secondary);
+  padding-top: 94px;
+}
+
+.our-team-list {
+  display: flex;
+}
+
+.our-team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team-item {
   background-color: var(--text-color-alt);
   max-width: 270px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .our-team-item > img {
@@ -275,15 +339,27 @@ p {
   background-color: var(--text-colot-accent);
 }
 
+.filter {
+  margin-bottom: 50px;
+}
+.gallery-item {
+  max-width: 370;
+}
+
 .gallery-card {
   color: inherit;
 }
+
+/* .gallery-card > img {
+  margin-bottom: 20px;
+} */
 
 .card-name {
   color: var(--text-color-main);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .card-filter {
