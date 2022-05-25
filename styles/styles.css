@@ -17,6 +17,7 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
 }
 
 .link {
@@ -34,6 +35,22 @@ body {
   width: 1px;
 }
 
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* ========================HEADER====================== */
 .header {
   background-color: var(--text-color-alt);
@@ -74,6 +91,11 @@ body {
   color: var(--text-color-secondary);
 }
 
+.header > .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* ========================FOOTER====================== */
 
 .footer {
@@ -81,7 +103,9 @@ body {
 }
 
 .logo-alt {
+  display: inline-block;
   color: var(--text-color-alt);
+  margin-bottom: 20px;
 }
 
 .address-street > .footer-link {
@@ -102,6 +126,10 @@ body {
   cursor: pointer;
 }
 
+.footer > .container {
+  padding: 60px 0;
+}
+
 /* ========================/// STUDIO ///====================== */
 
 /* ========================MAIN====================== */
@@ -110,6 +138,7 @@ body {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 /* змінну кольору не ставлю, так як явно у Героя буде інший контент */
 
@@ -118,15 +147,21 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
   color: var(--text-color-alt);
   background-color: var(--text-colot-accent);
   cursor: pointer;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--text-colot-accent);
 }
 
 .hero-btn:focus,
@@ -138,6 +173,10 @@ body {
 /* .preferences {
   background-color: var(--bgc-color-main);
 } */
+.preferences > .container {
+  margin-top: 96px;
+  margin-bottom: 94px;
+}
 
 .preferences-header {
   color: var(--text-color-main);
@@ -145,6 +184,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .preferences-text {
   font-size: 14px;
@@ -161,8 +201,11 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
-
+.whatdowedo > .container {
+  margin-bottom: 94px;
+}
 /* ========================our-team====================== */
 .our-team {
   background-color: var(--bgc-color-secondary);
@@ -170,6 +213,12 @@ body {
 
 .our-team-item {
   background-color: var(--text-color-alt);
+  max-width: 270px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-item > img {
+  margin-bottom: 30px;
 }
 
 .our-team-name {
@@ -179,6 +228,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .our-team-position {
@@ -186,6 +236,11 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
+}
+
+.our-team > .container {
+  padding: 94px 0;
 }
 
 /* ========================/// PORTFOLIO ///====================== */
