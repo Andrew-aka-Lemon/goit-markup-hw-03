@@ -276,6 +276,7 @@ p {
   display: block;
 }
 /* ========================our-team====================== */
+
 .our-team {
   background-color: var(--bgc-color-secondary);
   padding-top: 94px;
@@ -290,14 +291,16 @@ p {
 }
 
 .our-team-item {
-  /* padding-bottom: 30px; */
-
   background-color: var(--text-color-alt);
   max-width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.our-team-item > img {
+  display: block;
 }
 
 .our-team-name {
