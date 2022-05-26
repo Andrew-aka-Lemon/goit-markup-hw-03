@@ -354,13 +354,12 @@ p {
   background-color: var(--text-colot-accent);
 }
 
-.gallery-grid {
+.gallery-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .gallery-item {
-  /* max-width: 370; */
   flex-basis: calc(100% / 3 - 30px);
 }
 
