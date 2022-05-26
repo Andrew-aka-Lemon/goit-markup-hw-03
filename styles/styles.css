@@ -64,6 +64,7 @@ p {
   background-color: var(--text-color-alt);
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -361,6 +362,7 @@ p {
 
 .gallery-item {
   flex-basis: calc(100% / 3 - 30px);
+  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery-item:not(:nth-child(3n)) {
